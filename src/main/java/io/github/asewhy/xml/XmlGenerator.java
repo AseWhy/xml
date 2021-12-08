@@ -1,8 +1,8 @@
 package io.github.asewhy.xml;
 
-import io.github.asewhy.xml.support.interfaces.CommonBuilderWriter;
-import io.github.asewhy.xml.support.interfaces.StreamWrapperWriter;
-import io.github.asewhy.xml.support.interfaces.iWriter;
+import io.github.asewhy.processors.support.CommonBuilderWriter;
+import io.github.asewhy.processors.support.StreamWrapperWriter;
+import io.github.asewhy.processors.support.interfaces.iWriter;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.OutputStream;

@@ -13,6 +13,7 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <io.github.asewhy.processors.version>1.0</io.github.asewhy.processors.version>
     </properties>
 
     <dependencies>
@@ -28,6 +29,12 @@
             <artifactId>junit-vintage-engine</artifactId>
             <version>5.8.1</version>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.asewhy</groupId>
+            <artifactId>processors</artifactId>
+            <version>${io.github.asewhy.processors.version}</version>
         </dependency>
     </dependencies>
 
