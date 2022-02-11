@@ -235,7 +235,7 @@ public final class XmlGenerator {
     }
 
     /**
-     * Выводит открывающийся тег, значение пространства имен и имя <new_namespace:new_name>...
+     * Выводит открывающийся тег, значение пространства имен и имя &lt;new_namespace:new_name&gt;...
      *
      * @param namespace пространство имен
      * @param name имя поля
@@ -282,7 +282,7 @@ public final class XmlGenerator {
     }
 
     /**
-     * Выводит открывающийся тег, значение пространства имен по умолчанию и имя <new_namespace:new_name>...
+     * Выводит открывающийся тег, значение пространства имен по умолчанию и имя &lt;new_namespace:new_name&gt;...
      *
      * @param name имя поля
      * @return генератор {@link XmlGenerator} {
@@ -335,7 +335,7 @@ public final class XmlGenerator {
     }
 
     /**
-     * Закрывает текущий узел ... </last_namespace:last_name>, при этом последнее пространство имен и последнее имя будет подставлено автоматически
+     * Закрывает текущий узел ... &lt;/last_namespace:last_name&gt;, при этом последнее пространство имен и последнее имя будет подставлено автоматически
      *
      * @return генератор {@link XmlGenerator}
      */
@@ -352,7 +352,7 @@ public final class XmlGenerator {
     }
 
     /**
-     * Закрывает текущий узел ... </last_namespace:last_name>, с учетом имени переданного как параметр
+     * Закрывает текущий узел ... &lt;/last_namespace:last_name&gt;, с учетом имени переданного как параметр
      *
      * @param name название узла
      * @return генератор {@link XmlGenerator}
@@ -366,7 +366,7 @@ public final class XmlGenerator {
     }
 
     /**
-     * Закрывает текущий узел ... </last_namespace:last_name>, с учетом имени и пространства имен переданных как параметров
+     * Закрывает текущий узел ... &lt;/last_namespace:last_name&gt;, с учетом имени и пространства имен переданных как параметров
      *
      * @param namespace пространство имен
      * @param name название узла
@@ -382,7 +382,7 @@ public final class XmlGenerator {
     }
 
     /**
-     * Закрывает текущий узел ... </last_namespace:last_name>, с учетом пространства имен по умолчанию
+     * Закрывает текущий узел ... &lt;/last_namespace:last_name&gt;, с учетом пространства имен по умолчанию
      *
      * @param name название узла
      * @return генератор {@link XmlGenerator}
