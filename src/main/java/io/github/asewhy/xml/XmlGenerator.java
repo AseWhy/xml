@@ -2,7 +2,7 @@ package io.github.asewhy.xml;
 
 import io.github.asewhy.processors.support.CommonBuilderWriter;
 import io.github.asewhy.processors.support.StreamWrapperWriter;
-import io.github.asewhy.processors.support.interfaces.iWriter;
+import io.github.asewhy.processors.support.interfaces.StringWriter;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.OutputStream;
@@ -31,10 +31,10 @@ public final class XmlGenerator {
     private long state;
     private DateFormat currentFormat;
     private String defaultNamespace;
-    private final iWriter writer;
+    private final StringWriter writer;
     private final LinkedList<String> tagStack;
 
-    private XmlGenerator(@NotNull iWriter writer, @NotNull DateFormat format) {
+    private XmlGenerator(@NotNull StringWriter writer, @NotNull DateFormat format) {
         this.writer = writer;
         this.state = 0x0;
         this.currentFormat = format;
@@ -447,7 +447,7 @@ public final class XmlGenerator {
     /**
      * Преобразовывает генератор к строковому значению
      *
-     * @return строковое значение, зависит от реализации {@link iWriter}
+     * @return строковое значение, зависит от реализации {@link StringWriter}
      */
     @Override
     public String toString() {
